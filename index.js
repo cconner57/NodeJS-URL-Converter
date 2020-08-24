@@ -2,7 +2,7 @@ const express = require('./node_modules/express');
 const cors = require('./node_modules/cors/lib');
 const ytdl = require('ytdl-core');
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 app.use(cors());
 
