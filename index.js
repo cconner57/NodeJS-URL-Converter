@@ -10,7 +10,7 @@ app.listen(PORT, () => {
 	console.log(`Server running on port ${PORT}`);
 });
 
-app.get('/downloadmp4', async (req, res, next) => {
+app.get('/download', async (req, res, next) => {
 	try {
 		let URL = req.query.url;
 		let title = 'video';
